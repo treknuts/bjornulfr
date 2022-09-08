@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  /* add variables here */
+  --primary: #8fbc8f;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  padding: 8rem;
+  position: relative;
+}
+
+.hero {
+  color: #eee;
+  background-image: url("https://images.unsplash.com/photo-1500043357865-c6b8827edf10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2160&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.subheader {
+  font-weight: 400;
+  color: #333;
+}
+
+.geo {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.geo > video {
+  width: 110%;
+  height: 110%;
+}
+
+.geo > h1 {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  font-weight: 900;
+  font-size: 64px;
+  font-family: sans-serif;
+  mix-blend-mode: multiply;
+  user-select: none;
+  text-align: center;
+}
+
+.header {
+  font-size: 100px;
+  font-weight: 900;
+  background-clip: text;
+  margin: 0;
+  padding: 0;
+  text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.3);
+  color: #eee;
+}
+
+.box {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  display: grid;
+  place-content: center;
+  background-color: var(--primary);
+  width: 30%;
+  padding: 6rem;
+}
+
+.geo-box {
+  background-color: orange;
+}
