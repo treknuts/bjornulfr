@@ -1,16 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.fromTo(
-  ".hero > .header",
-  { opacity: 0 },
-  { x: 250, opacity: 1, duration: 0.5 }
-);
-
-gsap.fromTo(
-  ".subheader",
-  { x: 800, opacity: 0 },
-  { x: 250, opacity: 1, duration: 0.5 }
-);
+gsap.from(".title", { y: -400, opacity: 0, duration: 1 });
+gsap.from(".subtitle", { x: -400, duration: 1 });
 
 gsap.to(".geo-box", {
   scrollTrigger: {
@@ -45,7 +36,10 @@ function parallax(e) {
     const tilty = dx / cx;
 
     gsap.to(box, {
-      backgroundPosition: `${tilty * 15}px ${tiltx * 15}px`,
+      backgroundPosition: `${Math.min(0, tilty * 8)}px ${Math.min(
+        0,
+        tiltx * 8
+      )}px`,
     });
   });
 }

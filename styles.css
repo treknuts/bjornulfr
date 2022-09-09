@@ -36,17 +36,36 @@ body {
 }
 
 .hero {
-  color: #eee;
-  background-image: url("https://images.unsplash.com/photo-1500043357865-c6b8827edf10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2160&q=80");
+  background-image: url("https://images.unsplash.com/photo-1500043357865-c6b8827edf10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80");
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  width: 100%;
+  width: 110vw;
 }
 
-.subheader {
+.title {
+  font-size: 16rem;
+  color: #eee;
+  user-select: none;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.subtitle {
+  font-size: 2rem;
   font-weight: 400;
   color: #333;
+  user-select: none;
+}
+
+.header {
+  font-size: 8rem;
+  font-weight: 900;
+  text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.3);
+  user-select: none;
 }
 
 .geo {
@@ -55,47 +74,42 @@ body {
 }
 
 .geo > video {
-  width: 110%;
-  height: 110%;
+  rotate: -20deg;
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  top: -30%;
+  left: -30%;
 }
 
-.geo > h1 {
+.geo > .text-box {
+  padding: 8rem;
+  color: #eee;
   position: absolute;
   inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #000;
-  color: #fff;
-  font-weight: 900;
-  font-size: 64px;
-  font-family: sans-serif;
   mix-blend-mode: multiply;
-  user-select: none;
-  text-align: center;
 }
 
-.header {
-  font-size: 100px;
-  font-weight: 900;
-  background-clip: text;
-  margin: 0;
-  padding: 0;
-  text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.3);
-  color: #eee;
+.bird-box > .header {
+  color: #333;
 }
 
 .box {
   position: absolute;
-  bottom: 4rem;
-  right: 4rem;
+  bottom: 8rem;
+  right: 8rem;
   display: grid;
   place-content: center;
-  background-color: var(--primary);
   width: 30%;
   padding: 6rem;
+  color: #333;
 }
 
 .geo-box {
   background-color: orange;
+}
+
+.bird-box {
+  background-color: pink;
 }
