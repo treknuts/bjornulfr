@@ -7,41 +7,48 @@
     <title>Iceland</title>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
-  <body class="content">
-    <section class="section hero">
-      <h1 class="title">Iceland</h1>
-      <h3 class="subtitle">Escape the Ordinary</h3>
-    </section>
-    <section class="section geo">
-      <video autoplay loop muted>
-        <source type="video/mp4" src="./lava.mp4" />
-      </video>
-      <div class="text-box">
-        <h1 class="header">Geothermal Powerhouse</h1>
-      </div>
-      <div class="box geo-box">
-        <p>
-          The Reykjanes peninsula is a geological wonder, where lighthouses
-          outnumber villages. Besides hosting the Keflavík International Airport
-          and, just a few minutes away, the spectacular Blue Lagoon, and the
-          Fagradalsfjall volcano, the Reykjanes peninsula is a destination in
-          its own right.
-        </p>
-      </div>
-    </section>
-    <section class="section bird">
-      <h1 class="header">Bird Watching</h1>
-      <div class="box bird-box">
-        <p>
-          One of Iceland's best-kept secrets is undoubtedly the country's
-          northwest corner, named the Westfjords. Isolation and sparse
-          population have preserved the unspoiled nature of the Westfjords and
-          Icelandic folklore culture. Travel guides frequently designate the
-          Westfjords as a destination of excellence. The Westfjords are
-          certainly a must-see for any serious explorer.
-        </p>
-      </div>
-    </section>
+  <body>
+    <nav class="nav">
+      <a class="nav-link" href="#home">Visit</a>
+      <a class="nav-link" href="#geothermal">Geothermal</a>
+      <a class="nav-link" href="#birds">Birds</a>
+    </nav>
+    <div class="content">
+      <section id="home" class="section hero">
+        <h1 class="title">Iceland</h1>
+        <h3 class="subtitle">Escape the Ordinary</h3>
+      </section>
+      <section id="geothermal" class="section geo">
+        <video autoplay loop muted>
+          <source type="video/mp4" src="./lava.mp4" />
+        </video>
+        <div class="text-box">
+          <h1 class="header">Geothermal Powerhouse</h1>
+        </div>
+        <div class="box geo-box">
+          <p>
+            The Reykjanes peninsula is a geological wonder, where lighthouses
+            outnumber villages. Besides hosting the Keflavík International
+            Airport and, just a few minutes away, the spectacular Blue Lagoon,
+            and the Fagradalsfjall volcano, the Reykjanes peninsula is a
+            destination in its own right.
+          </p>
+        </div>
+      </section>
+      <section id="birds" class="section bird">
+        <h1 class="header">Bird Watching</h1>
+        <div class="box bird-box">
+          <p>
+            One of Iceland's best-kept secrets is undoubtedly the country's
+            northwest corner, named the Westfjords. Isolation and sparse
+            population have preserved the unspoiled nature of the Westfjords and
+            Icelandic folklore culture. Travel guides frequently designate the
+            Westfjords as a destination of excellence. The Westfjords are
+            certainly a must-see for any serious explorer.
+          </p>
+        </div>
+      </section>
+    </div>
 
     <!-- GSAP imports (probably too many) -->
     <script

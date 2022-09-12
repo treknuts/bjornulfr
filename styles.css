@@ -3,6 +3,8 @@
 :root {
   /* add variables here */
   --primary: #8fbc8f;
+  --text-color: #333;
+  --color-shades-dark: rgb(25, 25, 25);
 }
 
 * {
@@ -26,6 +28,28 @@ span {
 body {
   margin: 0;
   padding: 0;
+}
+
+.nav {
+  position: fixed;
+  inset: 0;
+  padding: 4rem;
+  z-index: 999;
+}
+
+.nav-link {
+  border-block-end: 3px solid var(--border-color, transparent);
+  border-block-end: 3px solid var(--border-color, transparent);
+  color: var(--text-color);
+  display: inline-block;
+  margin-block-end: 0.5rem; /* See note at the bottom of this chapter */
+  margin-inline-end: 0.5rem;
+  padding: 0.1rem;
+  text-decoration: none;
+}
+
+.nav-link:where(:hover, :focus) {
+  --border-color: var(--text-color);
 }
 
 .section {
